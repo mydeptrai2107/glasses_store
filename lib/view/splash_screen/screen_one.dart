@@ -37,7 +37,7 @@ class _ScreenOneState extends State<ScreenOne> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Center(child: Image(image: AssetImage('images/Nike logo.png'))),
+          Center(child: Image(image: AssetImage('images/logo.png'))),
         ],
       ),
     );

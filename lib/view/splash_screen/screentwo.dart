@@ -35,7 +35,7 @@ class ScreenTwo extends StatelessWidget {
                   ),
                   Center(
                     child: Text(
-                      "Nike",
+                      "GLASSES",
                       style: TextStyle(
                         fontFamily: 'Raleway-Bold',
                         fontSize: 30,

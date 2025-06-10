@@ -7,22 +7,15 @@ import 'package:ecommerce_app/utils/fav_provider.dart';
 import 'package:ecommerce_app/utils/general_utils.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:persistent_shopping_cart/persistent_shopping_cart.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
   await PersistentShoppingCart().init();
   WidgetsFlutterBinding.ensureInitialized();
-  Stripe.publishableKey =
-      "pk_test_51OIMAyHdpKm7MB8qqvzh6yB053y1lg8vJlUhPZ05Omb93IrEljTl9pC4YAuay0jh1cvxfQfHAkWMnkiGhfB3l92Y00XANULzRX";
-  Stripe.merchantIdentifier = 'merchant.flutter.stripe.test';
-  Stripe.urlScheme = 'flutterstripe';
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   ProductList();
 
-  // addBrands();
-  // ProductList.uploadProductsWithImages();
   runApp(const MyApp());
 }
 
@@ -45,7 +38,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        initialRoute: RouteNames.screenOne,
+        initialRoute: RouteNames.loginScreen,
         onGenerateRoute: Routes.generateroutes,
       ),
     );

@@ -309,10 +309,11 @@ class _HomeScreenState extends State<HomeScreen> {
                               Text(
                                 '15%  OFF',
                                 style: TextStyle(
-                                    fontFamily: 'Poppins-Medium',
-                                    color: Color(0xff674DC5),
-                                    fontSize: 30,
-                                    fontWeight: FontWeight.bold),
+                                  fontFamily: 'Poppins-Medium',
+                                  color: Color(0xff674DC5),
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ],
                           ),
@@ -321,7 +322,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           Image(
                             image: AssetImage(
-                              'images/products/shoe3.png',
+                              'images/logo.png',
                             ),
                             height: 70,
                           ),
